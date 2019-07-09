@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/newFragment"
+    android:background="@color/colorPrimary"
+    android:paddingEnd="32dp"
+    android:paddingStart="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
+    android:paddingRight="32dp"
+    android:paddingLeft="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:id="@+id/buttons">
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="next"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="0dp" />
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="Image"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="0dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recyclerViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Valami"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="32dp"
+            android:padding="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
