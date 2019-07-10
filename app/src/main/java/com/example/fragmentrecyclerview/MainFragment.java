@@ -19,7 +19,7 @@ import java.util.Objects;
 import static android.content.ContentValues.TAG;
 
 public class MainFragment extends Fragment {
-    private Button next, recyclerView;
+    private Button next, recyclerView, makePicture;
 
     @Nullable
     @Override
@@ -46,6 +46,14 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), ContactListActivity.class));
+            }
+        });
+
+        makePicture = view.findViewById(R.id.imageButton);
+        makePicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyCameraActivity.class));
             }
         });
         return view;
